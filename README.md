@@ -1,10 +1,10 @@
 # correlation-between-education-and-career
-הקובץ מכיל נתונים על קריירה של עובדים והצלחתם בשוק העבודה, תוך התמקדות בקשרים בין סוגי ההשכלה שהשיגו לבין הצלחתם המקצועית. המידע שבקובץ כולל פרטים על מקצועותיהם של העובדים, רמות השכר שלהם, רמות ההשכלה (תיכון, אקדמאי, תארים נוספים), גילם, מגדרם, תחום העיסוק ועוד
+הפרויקט בודק את הקשר בין השכלה לקריירה, על סמך נתונים של בוגרי תואר ראשון בהנדסה ומדעי המחשב מ-44 אוניברסיטאות בארה"ב. לכל בוגר יש נתונים על תחום הלימוד, המוסד שבו למד, ממוצע הציונים, שנות הניסיון, הגיל, המגדר, האם התקבל לעבודה, והשכר ההתחלתי שלו.
 
 ## Project files
 - [`education_career_analysis.ipynb`](education_career_analysis.ipynb): my full analysis notebook for the EDA course. It reads the data straight from this repository.
 - [`EDA_summary_report.docx`](EDA_summary_report.docx): my summary report (research questions, insights and LLM questions).
-- [`job_placement.csv`](job_placement.csv): 700 Bachelor's graduates with field of study, college, GPA, years of experience, gender, age, whether they were hired, and salary.
+- [`job_placement.csv`](job_placement.csv): 700 rows (340 different graduates after removing duplicates) of Bachelor's graduates with field of study, college, GPA, years of experience, gender, age, whether they were hired, and salary.
 
 ## Research questions
 1. Does work experience change the chance of getting hired?
@@ -23,7 +23,7 @@ Deeper questions that combine three or more columns:
 ## Key insights
 1. **Where you studied decides whether you get hired.** Most universities placed 97% of their graduates, while three (Penn, UNC Chapel Hill, UC Riverside) placed only 4%, even though their students' grades are just as good.
 2. **Experience and grades only look like they matter for hiring.** Overall, 3 years of experience seems to lift the hiring rate from 70% to 97%, but inside each group of colleges experience makes no difference. The colleges that hardly place anyone simply have no students with 3 years of experience (a confounding variable).
-3. **College also sets the salary, and grades add only a small bonus.** All columns together explain 94% of salary differences, and college alone explains about 63%. With the same GPA and experience, Delaware graduates earn about $2,000 more than predicted and Rochester graduates about $3,300 less. GPA still adds about $480 per 0.1 point.
+3. **College also sets the salary, and grades add only a small bonus.** All columns together explain 94% of salary differences, and about 63% is explained by college and by no other column. With the same GPA and experience, Delaware graduates earn about $2,000 more than predicted and Rochester graduates about $3,300 less. GPA still adds about $480 per 0.1 point.
 
 Also found along the way: outside the three low-placement colleges, all 134 men were hired while 9 of 151 women were not (p = 0.004), a gap hidden in the overall numbers. Field of study, gender overall and age made no significant difference.
 
