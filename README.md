@@ -2,7 +2,8 @@
 הקובץ מכיל נתונים על קריירה של עובדים והצלחתם בשוק העבודה, תוך התמקדות בקשרים בין סוגי ההשכלה שהשיגו לבין הצלחתם המקצועית. המידע שבקובץ כולל פרטים על מקצועותיהם של העובדים, רמות השכר שלהם, רמות ההשכלה (תיכון, אקדמאי, תארים נוספים), גילם, מגדרם, תחום העיסוק ועוד
 
 ## Project files
-- [`education_career_analysis.ipynb`](education_career_analysis.ipynb): the full analysis notebook (EDA course project by Aharon). It reads the data straight from this repository.
+- [`education_career_analysis.ipynb`](education_career_analysis.ipynb): my full analysis notebook for the EDA course. It reads the data straight from this repository.
+- [`EDA_summary_report.docx`](EDA_summary_report.docx): my summary report (research questions, insights and LLM questions).
 - [`job_placement.csv`](job_placement.csv): 700 Bachelor's graduates with field of study, college, GPA, years of experience, gender, age, whether they were hired, and salary.
 
 ## Research questions
